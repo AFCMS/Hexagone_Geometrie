@@ -1,0 +1,31 @@
+name: CMake Build
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create Build Environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ 
+
+      - name: Configure CMake
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+
+      - name: Build
+        run: |
+          cd build
+          make
+
+      - name: Run
+        run: |
+          cd build
+          ./Geometrie_B1A

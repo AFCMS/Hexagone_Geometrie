@@ -24,6 +24,19 @@ ij_editorconfig_space_before_colon = false
 ij_editorconfig_space_before_comma = false
 ij_editorconfig_spaces_around_assignment_operators = true
 
+[{*.apinotes,*.yaml,*.yml,.clang-format,.clang-tidy,_clang-format}]
+indent_size = 2
+ij_yaml_align_values_properties = do_not_align
+ij_yaml_autoinsert_sequence_marker = true
+ij_yaml_block_mapping_on_new_line = false
+ij_yaml_indent_sequence_value = true
+ij_yaml_keep_indents_on_empty_lines = false
+ij_yaml_keep_line_breaks = true
+ij_yaml_sequence_on_new_line = false
+ij_yaml_space_before_colon = false
+ij_yaml_spaces_within_braces = true
+ij_yaml_spaces_within_brackets = true
+
 [{*.c,*.c++,*.c++m,*.cc,*.ccm,*.cp,*.cpp,*.cppm,*.cu,*.cuh,*.cxx,*.cxxm,*.h,*.h++,*.hh,*.hp,*.hpp,*.hxx,*.i,*.icc,*.ii,*.inl,*.ino,*.ipp,*.ixx,*.m,*.mm,*.mxx,*.pch,*.tcc,*.tpp}]
 ij_c_add_brief_tag = false
 ij_c_add_getter_prefix = true
